@@ -1,0 +1,785 @@
+<html>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<body>
+	<div id="maindiv">
+		<ul id = "myTab" class = "nav nav-tabs">
+			<li class = "active">
+				<a href = "#home" data-toggle = "tab">
+					Effective Dealer Selection
+				</a>
+			</li>
+
+			<li><a href = "#ywa" data-toggle = "tab">Repairs - Year Wise</a></li>
+			<li><a href = "#maker" data-toggle = "tab">Performance of Iterations of Car </a></li>
+			<li><a href = "#emaker" data-toggle = "tab">Car Performance</a></li>
+		</ul>
+
+		<div id = "myTabContent" class = "tab-content">
+			<div class = "tab-pane fade in active" id = "home">
+				<h3>Effective Dealer is <span class="label label-primary">10467</span></h3>
+				<p> An effective dealer would be someone who <span class="label label-default">Minimizes</span> the following </p>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<dl class="dl-horizontal">
+							<dt><strong>Cost Per Customer</strong></dt>
+							<dd>The total cost spent on every customer must be minimum. This would increase the customer visits since the dealer charges less compared to others<dd>
+								<dt><strong>Technician per <br>customer</strong></dt>
+								<dd>The average number of technicians who attend a repair must be less. This would help the dealer to attend more customers any given time<dd>
+									<dt><strong>Avg Operation time</strong></dt>
+									<dd>The time spent on a particular operation must be minimum. This would allow the dealer to handle many operations there by handling more repairs per day<dd>
+									</dl>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4">
+									<h3> Top 10 dealers with less <u>average cost per customer</u></h3>
+									<ul class="list-group">
+										<li class="list-group-item">
+											<span class="badge">79.56</span>
+											9906
+										</li>
+										<li class="list-group-item">
+											<span class="badge">114.93</span>
+											7455
+										</li>
+										<li class="list-group-item">
+											<span class="badge">140.75</span>
+											15441
+										</li>
+										<li class="list-group-item">
+											<span class="badge">140.76</span>
+											10713
+										</li>
+										<li class="list-group-item">
+											<span class="badge">151.57</span>
+											6189
+										</li>
+										<li class="list-group-item">
+											<span class="badge">152.61</span>
+											33078
+										</li>
+										<li class="list-group-item">
+											<span class="badge">160.91</span>
+											15438
+										</li>
+										<li class="list-group-item">
+											<span class="badge">162.82</span>
+											5412
+										</li>
+										<li class="list-group-item">
+											<span class="badge">162.83</span>
+											11463
+										</li>
+										<li class="list-group-item list-group-item-danger">
+											<span class="badge">163.76</span>
+											10467
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-4">
+									<h3> Top 10 dealers with less <u>number of Technicians per customer</u></h3>
+									<ul class="list-group">
+										<li class="list-group-item">
+											<span class="badge">1.22</span>
+											9783
+										</li>
+										<li class="list-group-item">
+											<span class="badge">1.26</span>
+											7455
+										</li>
+										<li class="list-group-item">
+											<span class="badge">1.51</span>
+											10062
+										</li>
+										<li class="list-group-item">
+											<span class="badge">1.70</span>
+											9906
+										</li>
+										<li class="list-group-item">
+											<span class="badge">1.73</span>
+											15801
+										</li>
+										<li class="list-group-item">
+											<span class="badge">1.76</span>
+											7437
+										</li>
+										<li class="list-group-item">
+											<span class="badge">1.80</span>
+											10494
+										</li>
+										<li class="list-group-item">
+											<span class="badge">1.82</span>
+											15951
+										</li>
+										<li class="list-group-item">
+											<span class="badge">1.85</span>
+											15783
+										</li>
+										<li class="list-group-item">
+											<span class="badge">1.85</span>
+											10455
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-4">
+									<h3> Top 10 dealers with less <u>operations <br> over time</u></h3>
+									<ul class="list-group">
+										<li class="list-group-item list-group-item-danger">
+											<span class="badge">9.93</span>
+											10467
+										</li>
+										<li class="list-group-item">
+											<span class="badge">11.45</span>
+											7455
+										</li>
+										<li class="list-group-item">
+											<span class="badge">11.96</span>
+											11502
+										</li>
+										<li class="list-group-item">
+											<span class="badge">14.43</span>
+											6732
+										</li>
+										<li class="list-group-item">
+											<span class="badge">14.56</span>
+											516
+										</li>
+										<li class="list-group-item">
+											<span class="badge">15.07</span>
+											15447
+										</li>
+										<li class="list-group-item">
+											<span class="badge">16.22</span>
+											11520
+										</li>
+										<li class="list-group-item">
+											<span class="badge">16.94</span>
+											7422
+										</li>
+										<li class="list-group-item">
+											<span class="badge">17.006</span>
+											15774
+										</li>
+										<li class="list-group-item">
+											<span class="badge">17.18</span>
+											1767
+										</li>
+									</ul>
+								</div>
+							</div>
+							<p> and <span class="label label-default">Maximizes</span> the following </p>
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<dl class="dl-horizontal">
+										<dt><strong>Number of <br>Customer Visit</strong></dt>
+										<dd>More number of customers visiting a dealer would give the clear sign on the trust the customers have on the dealer<dd>
+											<dt><strong>Number of Unique<br>Technicians</strong></dt>
+											<dd>More number of technicians pictures a dealer portrays the large number of repairs they could handle at a given time </dd>
+											<dt><strong>Number of Operations</strong></dt>
+											<dd>High number of unique operations performed by the dealer portrays the versatality of the dealer</dd>
+										</dl>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4">
+										<h3> Top 10 dealers handled most <u>number <br>of repairs</u> </h3>
+										<ul class="list-group">
+											<li class="list-group-item">
+												<span class="badge">93597</span>
+												33078
+											</li>
+											<li class="list-group-item">
+												<span class="badge">93388</span>
+												9774
+											</li>
+											<li class="list-group-item">
+												<span class="badge">58644</span>
+												7335
+											</li>
+											<li class="list-group-item">
+												<span class="badge">48515</span>
+												15447
+											</li>
+											<li class="list-group-item">
+												<span class="badge">46976</span>
+												11511
+											</li>
+											<li class="list-group-item list-group-item-danger">
+												<span class="badge">44921</span>
+												10467
+											</li>
+											<li class="list-group-item">
+												<span class="badge">43209</span>
+												15912
+											</li>
+											<li class="list-group-item">
+												<span class="badge">42931</span>
+												10833
+											</li>
+											<li class="list-group-item">
+												<span class="badge">41655</span>
+												51018
+											</li>
+											<li class="list-group-item">
+												<span class="badge">41274</span>
+												27081
+											</li>
+										</ul>
+									</div>
+									<div class="col-md-4">
+										<h3> Top 10 dealers with most <u>number of Unique Operations</u> </h3>
+										<ul class="list-group">
+											<li class="list-group-item">
+												<span class="badge">60</span>
+												21291
+											</li>
+											<li class="list-group-item list-group-item-danger">
+												<span class="badge">60</span>
+												10467
+											</li>
+											<li class="list-group-item">
+												<span class="badge">59</span>
+												15447
+											</li>
+											<li class="list-group-item">
+												<span class="badge">57</span>
+												27081
+											</li>
+											<li class="list-group-item">
+												<span class="badge">57</span>
+												11520
+											</li>
+											<li class="list-group-item">
+												<span class="badge">56</span>
+												9774
+											</li>
+											<li class="list-group-item">
+												<span class="badge">56</span>
+												5523
+											</li>
+											<li class="list-group-item">
+												<span class="badge">56</span>
+												10068
+											</li>
+											<li class="list-group-item">
+												<span class="badge">55</span>
+												15438
+											</li>
+											<li class="list-group-item">
+												<span class="badge">55</span>
+												6243
+											</li>
+										</ul>
+									</div>
+									<div class="col-md-4">
+										<h3> Top 10 dealers with most <u>number of Unique Technicians</u> </h3>
+										<ul class="list-group">
+											<li class="list-group-item">
+												<span class="badge">395</span>
+												33078
+											</li>
+											<li class="list-group-item">
+												<span class="badge">187</span>
+												27081
+											</li>
+											<li class="list-group-item">
+												<span class="badge">126</span>
+												11457
+											</li>
+											<li class="list-group-item">
+												<span class="badge">120</span>
+												10455
+											</li>
+											<li class="list-group-item">
+												<span class="badge">87</span>
+												15951
+											</li>
+											<li class="list-group-item">
+												<span class="badge">82</span>
+												10491
+											</li>
+											<li class="list-group-item">
+												<span class="badge">76</span>
+												9894
+											</li>
+											<li class="list-group-item">
+												<span class="badge">74</span>
+												7335
+											</li>
+											<li class="list-group-item">
+												<span class="badge">73</span>
+												9774
+											</li>
+											<li class="list-group-item">
+												<span class="badge">69</span>
+												7314
+											</li>
+
+										</ul>
+									</div>
+								</div>
+
+								<div class="panel panel-default">
+									<div class="panel-body">
+										<p><span class="label label-default">Process</span> : Fetch the top 10 dealers in each of the cateogory mentioned above and check which dealer appears most out of these 6 factors mentioned. The dealer <span class="label label-danger">10467</span> is the only dealer who have the good mix of the above mentioned factors.</p>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading"><strong>Reason for Choosing the above mentioned parameters</strong></div>
+									<div class="panel-body">
+										<dl class="dl-horizontal">
+
+											<dt><strong>Cost Per Customer</strong></dt><dd>Cost per customer is directly proportional to the factor that lets any of the customer to visit a store/dealer</dd><br>
+											<dt><strong>Technicians Per<br> Customer</strong></dt> <dd> This factor is important because if a dealer could train it’s technicians so that every time only one technician is needed to attend a customer irrespective of the needs that would make the dealer more efficient </dd><br>
+											<dt><strong>Avg Operation Time</strong></dt> <dd> Any dealer would want to reduce the time of the operations they carry out. This factor is also directly proportional to efficient a dealer is </dd><br>
+											<dt><strong>Number of repair<br> cases handled</strong></dt><dd>This factor is important because it portrays the experience of a particular dealer. It directly depicts how trustable a dealer could be</dd><br>
+											<dt><strong>Number of Unique<br> Operations</strong></dt><dd>This factor portrays how versatile a dealer could be. Directly depicts the multifaceted in handling different operations when compared to other dealers</dd><br>
+											<dt><strong>Number of Unique<br> Technicians</strong></dt><dd>This depicts how big a dealer is when compared to the other dealers. This also showcases the fact that a dealer could handle more cases on an average compared to dealers with less number of technicians</dd>
+
+										</dl>
+									</div>
+								</div>
+
+							</div>
+
+							<div class = "tab-pane fade" id = "ywa">
+								<h2> <u>Number of repairs reported every month over 4 years</u> </h2>
+								<div id="chart"> </div>
+								<div class="panel panel-default">
+									<div class="panel-heading"> <strong>Year wise Analysis</strong> </div>
+									<div class="panel-body">
+										<dl class="dl-horizontal">
+											<dt><strong>2009</strong></dt>
+											<dd><span class="label label-default">Avg 2331.75</span>
+												Yeah 2009 has recorded the lowest number of repairs</dd>
+												<dt><strong>2010</strong></dt>
+												<dd><span class="label label-default">Avg 22800.58</span>
+													The average has increased 10 folds when compared to the previous year. The overall increase in the number of repairs was mainly due to the sudden surge record during the months November and December</dd>
+													<dt><strong>2011</strong></dt>
+													<dd><span class="label label-default"> Avg 103233.58</span>
+														The average has increased 5 folds compared to the previous year. And the number of repairs has been consistently high throughout the year compared to the previous year. Possible reason could be <strong><u>the increase in the number of people who own the car</u></strong></dd>
+														<dt><strong>2012</strong></dt>
+														<dd>Though the number of repairs start off strongly, the numbers suddenly decreased between February and March. Possible reason could be <strong><u> some natural calamities which could have reduced the number of people who are driving outside</u></strong></dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+
+										<div class = "tab-pane fade" id = "maker">
+											<h2><u>Number of Repairs of car based on Model Year</u></h2>
+											<div id="yearwisedefect"></div>
+											<div class="panel panel-default">
+												<div class="panel-heading"><strong>Analysis</strong></div>
+												<div class="panel-body">
+													<p><span class="label label-default">Presented data</span> : The data presented above depicts the number of times the various models of a same car (CIVIC) has been repaired</p><br>
+													<p><span class="label label-default">Significance of Graph</span> : The data could be used by the car manufactures to understand how the different iterations of the same model is performing in the market</p><br>
+													<p><span class="label label-default">Insight from Data</span> : Even though the number of repairs reported in every iteration of the car has been increasing steadily from 1981 - 2008. The data clearly shows that after year <strong>2008</strong> the number of repairs reported has been reducing, which could be a good sign </p>
+												</div>
+											</div>
+											<div class="panel panel-default">
+												<div class="panel-heading"><strong>Reason for choosing CIVIC</strong></div>
+												<div class="panel-body">
+													<p>The CIVIC has gone through many iterations (27) over the years. And the dataset provided has data for all of the iterations of CIVIC. The versatility this data made CIVIC the obvious choice to depict the change in the number of repairs reported for every model</p>
+												</div>
+											</div>
+											<h2><u>Table below shows the a sample Car, Model and Number of repairs</u></h2>
+											<table class="table">
+												<tr><th>Car</th><th>Model</th><th>Number of Repairs</th></tr>
+												<tr><td>CANYON</td><td>1991</td><td>1</td></tr>
+												<tr><td>CANYON</td><td>2004</td><td>39</td></tr>
+												<tr><td>CANYON</td><td>2005</td><td>51</td></tr>
+												<tr><td>CANYON</td><td>2006</td><td>84</td></tr>
+												<tr><td>CANYON</td><td>2007</td><td>52</td></tr>
+												<tr><td>CANYON</td><td>2008</td><td>36</td></tr>
+												<tr><td>CANYON</td><td>2009</td><td>25</td></tr>
+												<tr><td>CANYON</td><td>2010</td><td>40</td></tr>
+												<tr><td>CANYON</td><td>2011</td><td>18</td></tr>
+												<tr><td>CANYON</td><td>2012</td><td>4</td></tr>
+												<tr><td>CAPRI</td><td>1993</td><td>2</td></tr>
+												<tr><td>CAPRI</td><td>1994</td><td>2</td></tr>
+												<tr><td>CAPRICE</td><td>1987</td><td>1</td></tr>
+												<tr><td>CAPRICE</td><td>1988</td><td>2</td></tr>
+												<tr><td>CAPRICE</td><td>1991</td><td>9</td></tr>
+												<tr><td>CAPRICE</td><td>1992</td><td>10</td></tr>
+												<tr><td>CAPRICE</td><td>1993</td><td>8</td></tr>
+												<tr><td>CAPRICE</td><td>1994</td><td>10</td></tr>
+												<tr><td>CAPRICE</td><td>1995</td><td>4</td></tr>
+												<tr><td>CAPRICE</td><td>1996</td><td>17</td></tr>
+											</table>
+											<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#carstable">More rows</button>
+											<div id="carstable" class="collapse">
+												<table class="table">
+													<tr><td>CAPTIVA SPORT</td><td>2012</td><td>4</td></tr>
+													<tr><td>CAR</td><td>1978</td><td>1</td></tr>
+													<tr><td>CAR</td><td>1965</td><td>1</td></tr>
+													<tr><td>CAR</td><td>1990</td><td>1</td></tr>
+													<tr><td>CAR</td><td>1991</td><td>1</td></tr>
+													<tr><td>CAR HAULER</td><td>1955</td><td>1</td></tr>
+													<tr><td>CAR HAULER</td><td>2006</td><td>1</td></tr>
+													<tr><td>CARAVAN</td><td>1991</td><td>1</td></tr>
+													<tr><td>CARAVAN</td><td>1992</td><td>3</td></tr>
+													<tr><td>CARAVAN</td><td>1993</td><td>3</td></tr>
+													<tr><td>CARAVAN</td><td>1994</td><td>5</td></tr>
+													<tr><td>CARAVAN</td><td>1995</td><td>7</td></tr>
+													<tr><td>CARAVAN</td><td>1996</td><td>13</td></tr>
+													<tr><td>CARAVAN</td><td>1997</td><td>29</td></tr>
+													<tr><td>CARAVAN</td><td>1998</td><td>14</td></tr>
+													<tr><td>CARAVAN</td><td>1999</td><td>28</td></tr>
+													<tr><td>CARAVAN</td><td>2000</td><td>42</td></tr>
+													<tr><td>CARAVAN</td><td>2001</td><td>25</td></tr>
+													<tr><td>CARAVAN</td><td>2002</td><td>63</td></tr>
+													<tr><td>CARAVAN</td><td>2003</td><td>95</td></tr>
+													<tr><td>CARAVAN</td><td>2004</td><td>30</td></tr>
+													<tr><td>CARAVAN</td><td>2005</td><td>181</td></tr>
+													<tr><td>CARAVAN</td><td>2006</td><td>190</td></tr>
+													<tr><td>CARAVAN</td><td>2007</td><td>68</td></tr>
+													<tr><td>CARAVAN</td><td>2010</td><td>3</td></tr>
+													<tr><td>CARGO</td><td>2012</td><td>9</td></tr>
+													<tr><td>CATERA</td><td>2000</td><td>37</td></tr>
+													<tr><td>CATERA</td><td>2001</td><td>17</td></tr>
+													<tr><td>CATERA</td><td>1997</td><td>10</td></tr>
+													<tr><td>CATERA</td><td>1998</td><td>12</td></tr>
+													<tr><td>CATERA</td><td>1999</td><td>20</td></tr>
+													<tr><td>CAVALIER</td><td>1991</td><td>1</td></tr>
+													<tr><td>CAVALIER</td><td>1992</td><td>3</td></tr>
+													<tr><td>CAVALIER</td><td>1993</td><td>8</td></tr>
+													<tr><td>CAVALIER</td><td>1994</td><td>2</td></tr>
+													<tr><td>CAVALIER</td><td>1995</td><td>4</td></tr>
+													<tr><td>CAVALIER</td><td>1996</td><td>14</td></tr>
+													<tr><td>CAVALIER</td><td>1997</td><td>32</td></tr>
+													<tr><td>CAVALIER</td><td>1998</td><td>30</td></tr>
+													<tr><td>CAVALIER</td><td>1999</td><td>30</td></tr>
+													<tr><td>CAVALIER</td><td>2000</td><td>71</td></tr>
+													<tr><td>CAVALIER</td><td>2001</td><td>111</td></tr>
+													<tr><td>CAVALIER</td><td>2002</td><td>153</td></tr>
+													<tr><td>CAVALIER</td><td>2003</td><td>123</td></tr>
+													<tr><td>CAVALIER</td><td>2004</td><td>149</td></tr>
+													<tr><td>CAVALIER</td><td>2005</td><td>109</td></tr>
+													<tr><td>CAYENNE</td><td>2004</td><td>16</td></tr>
+													<tr><td>CAYENNE</td><td>2005</td><td>21</td></tr>
+													<tr><td>CAYENNE</td><td>2006</td><td>3</td></tr>
+													<tr><td>CAYMAN</td><td>2008</td><td>1</td></tr>
+													<tr><td>CAYMAN</td><td>2006</td><td>3</td></tr>
+													<tr><td>CAYMAN</td><td>2007</td><td>6</td></tr>
+													<tr><td>CBR900</td><td>1973</td><td>1</td></tr>
+													<tr><td>CBR900</td><td>2005</td><td>1</td></tr>
+													<tr><td>CC</td><td>2009</td><td>398</td></tr>
+													<tr><td>CC</td><td>2010</td><td>572</td></tr>
+													<tr><td>CC</td><td>2011</td><td>171</td></tr>
+													<tr><td>CC</td><td>2012</td><td>259</td></tr>
+													<tr><td>CC</td><td>2013</td><td>7</td></tr>
+													<tr><td>CELEBRITY</td><td>1987</td><td>1</td></tr>
+													<tr><td>CELEBRITY</td><td>1988</td><td>1</td></tr>
+													<tr><td>CELEBRITY</td><td>1989</td><td>4</td></tr>
+													<tr><td>CELICA</td><td>1989</td><td>1</td></tr>
+													<tr><td>CELICA</td><td>1990</td><td>3</td></tr>
+													<tr><td>CELICA</td><td>1991</td><td>1</td></tr>
+													<tr><td>CELICA</td><td>1992</td><td>3</td></tr>
+													<tr><td>CELICA</td><td>1993</td><td>5</td></tr>
+													<tr><td>CELICA</td><td>1994</td><td>23</td></tr>
+													<tr><td>CELICA</td><td>1995</td><td>2</td></tr>
+													<tr><td>CELICA</td><td>1996</td><td>2</td></tr>
+													<tr><td>CELICA</td><td>1997</td><td>2</td></tr>
+													<tr><td>CELICA</td><td>1998</td><td>2</td></tr>
+													<tr><td>CELICA</td><td>1999</td><td>2</td></tr>
+													<tr><td>CELICA</td><td>2000</td><td>42</td></tr>
+													<tr><td>CELICA</td><td>2001</td><td>24</td></tr>
+													<tr><td>CELICA</td><td>2002</td><td>7</td></tr>
+													<tr><td>CELICA</td><td>2003</td><td>15</td></tr>
+													<tr><td>CELICA</td><td>2004</td><td>13</td></tr>
+													<tr><td>CELICA</td><td>2005</td><td>11</td></tr>
+													<tr><td>CENTURY</td><td>1987</td><td>2</td></tr>
+													<tr><td>CENTURY</td><td>1988</td><td>1</td></tr>
+													<tr><td>CENTURY</td><td>1989</td><td>2</td></tr>
+													<tr><td>CENTURY</td><td>1990</td><td>2</td></tr>
+													<tr><td>CENTURY</td><td>1991</td><td>4</td></tr>
+													<tr><td>CENTURY</td><td>1992</td><td>2</td></tr>
+													<tr><td>CENTURY</td><td>1993</td><td>10</td></tr>
+													<tr><td>CENTURY</td><td>1994</td><td>8</td></tr>
+													<tr><td>CENTURY</td><td>1995</td><td>13</td></tr>
+													<tr><td>CENTURY</td><td>1996</td><td>13</td></tr>
+													<tr><td>CENTURY</td><td>1997</td><td>11</td></tr>
+													<tr><td>CENTURY</td><td>1998</td><td>21</td></tr>
+													<tr><td>CENTURY</td><td>1999</td><td>49</td></tr>
+													<tr><td>CENTURY</td><td>2000</td><td>41</td></tr>
+													<tr><td>CENTURY</td><td>2001</td><td>73</td></tr>
+													<tr><td>CENTURY</td><td>2002</td><td>86</td></tr>
+													<tr><td>CENTURY</td><td>2003</td><td>101</td></tr>
+													<tr><td>CENTURY</td><td>2004</td><td>42</td></tr>
+													<tr><td>CENTURY</td><td>2005</td><td>51</td></tr>
+													<tr><td>CHALLENGER</td><td>1974</td><td>1</td></tr>
+													<tr><td>CHALLENGER</td><td>2008</td><td>12</td></tr>
+													<tr><td>CHALLENGER</td><td>2009</td><td>100</td></tr>
+													<tr><td>CHALLENGER</td><td>2010</td><td>284</td></tr>
+													<tr><td>CHALLENGER</td><td>2011</td><td>94</td></tr>
+													<tr><td>CHALLENGER</td><td>2012</td><td>46</td></tr>
+													<tr><td>CHANGE</td><td>2001</td><td>1</td></tr>
+													<tr><td>CHARGER</td><td>2005</td><td>2</td></tr>
+													<tr><td>CHARGER</td><td>2006</td><td>412</td></tr>
+													<tr><td>CHARGER</td><td>2007</td><td>394</td></tr>
+													<tr><td>CHARGER</td><td>2008</td><td>412</td></tr>
+													<tr><td>CHARGER</td><td>2009</td><td>244</td></tr>
+													<tr><td>CHARGER</td><td>2010</td><td>634</td></tr>
+													<tr><td>CHARGER</td><td>2011</td><td>265</td></tr>
+													<tr><td>CHARGER</td><td>2012</td><td>40</td></tr>
+													<tr><td>CHASSIS</td><td>1991</td><td>1</td></tr>
+													<tr><td>CHEROKEE</td><td>1986</td><td>2</td></tr>
+													<tr><td>CHEROKEE</td><td>1987</td><td>15</td></tr>
+													<tr><td>CHEROKEE</td><td>1988</td><td>6</td></tr>
+													<tr><td>CHEROKEE</td><td>1989</td><td>3</td></tr>
+													<tr><td>CHEROKEE</td><td>1990</td><td>5</td></tr>
+													<tr><td>CHEROKEE</td><td>1991</td><td>32</td></tr>
+													<tr><td>CHEROKEE</td><td>1992</td><td>10</td></tr>
+													<tr><td>CHEROKEE</td><td>1993</td><td>15</td></tr>
+													<tr><td>CHEROKEE</td><td>1994</td><td>17</td></tr>
+													<tr><td>CHEROKEE</td><td>1995</td><td>18</td></tr>
+													<tr><td>CHEROKEE</td><td>1996</td><td>64</td></tr>
+													<tr><td>CHEROKEE</td><td>1997</td><td>30</td></tr>
+													<tr><td>CHEROKEE</td><td>1998</td><td>60</td></tr>
+													<tr><td>CHEROKEE</td><td>1999</td><td>104</td></tr>
+													<tr><td>CHEROKEE</td><td>2000</td><td>122</td></tr>
+													<tr><td>CHEROKEE</td><td>2001</td><td>102</td></tr>
+													<tr><td>CHEV SHOP TIME</td><td>2005</td><td>16</td></tr>
+													<tr><td>CHEVETTE</td><td>1972</td><td>1</td></tr>
+													<tr><td>CHEVETTE</td><td>1982</td><td>3</td></tr>
+													<tr><td>CIERA</td><td>1995</td><td>18</td></tr>
+													<tr><td>CIERA</td><td>1996</td><td>18</td></tr>
+													<tr><td>CIMARRON</td><td>1985</td><td>1</td></tr>
+													<tr><td>CIRRUS</td><td>1995</td><td>6</td></tr>
+													<tr><td>CIRRUS</td><td>1996</td><td>1</td></tr>
+													<tr><td>CIRRUS</td><td>1997</td><td>6</td></tr>
+													<tr><td>CIRRUS</td><td>1998</td><td>20</td></tr>
+													<tr><td>CIRRUS</td><td>1999</td><td>20</td></tr>
+													<tr><td>CIRRUS</td><td>2000</td><td>35</td></tr>
+													<tr><td>CIRRUS</td><td>2005</td><td>1</td></tr>
+													<tr><td>CITYCOM</td><td>300</td><td>2009</td><td>3</td></tr>
+													<tr><td>CIVIC</td><td>1981</td><td>2</td></tr>
+													<tr><td>CIVIC</td><td>1984</td><td>1</td></tr>
+													<tr><td>CIVIC</td><td>1988</td><td>2</td></tr>
+													<tr><td>CIVIC</td><td>1989</td><td>3</td></tr>
+													<tr><td>CIVIC</td><td>1990</td><td>4</td></tr>
+													<tr><td>CIVIC</td><td>1991</td><td>21</td></tr>
+													<tr><td>CIVIC</td><td>1992</td><td>33</td></tr>
+													<tr><td>CIVIC</td><td>1993</td><td>45</td></tr>
+													<tr><td>CIVIC</td><td>1994</td><td>19</td></tr>
+													<tr><td>CIVIC</td><td>1995</td><td>54</td></tr>
+													<tr><td>CIVIC</td><td>1996</td><td>42</td></tr>
+													<tr><td>CIVIC</td><td>1997</td><td>110</td></tr>
+													<tr><td>CIVIC</td><td>1998</td><td>115</td></tr>
+													<tr><td>CIVIC</td><td>1999</td><td>122</td></tr>
+													<tr><td>CIVIC</td><td>2000</td><td>150</td></tr>
+													<tr><td>CIVIC</td><td>2001</td><td>253</td></tr>
+													<tr><td>CIVIC</td><td>2002</td><td>282</td></tr>
+													<tr><td>CIVIC</td><td>2003</td><td>310</td></tr>
+													<tr><td>CIVIC</td><td>2004</td><td>252</td></tr>
+													<tr><td>CIVIC</td><td>2005</td><td>317</td></tr>
+													<tr><td>CIVIC</td><td>2006</td><td>478</td></tr>
+													<tr><td>CIVIC</td><td>2007</td><td>521</td></tr>
+													<tr><td>CIVIC</td><td>2008</td><td>662</td></tr>
+													<tr><td>CIVIC</td><td>2009</td><td>384</td></tr>
+													<tr><td>CIVIC</td><td>2010</td><td>333</td></tr>
+													<tr><td>CIVIC</td><td>2011</td><td>113</td></tr>
+													<tr><td>CIVIC</td><td>2012</td><td>88</td></tr>
+												</table>
+											</div>
+										</div>
+										<div class = "tab-pane fade" id = "emaker">
+											<br>
+											<div class="panel panel-default">
+												<div class="panel-heading"> <strong>Mileage (Distance travelled so far) as measure of car performance</strong></div>
+												<div class="panel-body">
+													<dl class="dl-horizontal">
+														<dt><strong> Distance travelled <br> before getting <br> repaired </strong></dt>
+														<dd>The mileage signifies the distance the car has travelled before it was brought in for repair. The average mileage is the ratio of the total distance the particular car has travelled to the number of times a car of same of model has been brought in for a repair<br></dd>
+													</dl>
+												</div>
+											</div>
+
+
+											<div class="panel panel-default">
+
+												<div class="panel-heading"> <strong> Metric Usage </strong> </div>
+
+												<div class="panel-body">
+
+													<p>This measure could help,</p>
+
+													<p><span class="label label-default">car buyers</span> to analyze the reliable car models under every make</p>
+
+													<p><span class="label label-default">Manufactures</span> to concentrate more on these models so that are more reliable in the future<p>
+
+													</div>
+
+												</div>
+
+
+
+
+
+												<div class="panel panel-default">
+													<div class="panel-body">
+														<h2><u>Least reliable cars under every manufacturer</u></h2>
+
+														<p><span class="label label-default">Aim</span> : To fetch a car under every manufacturer which is more faulty<br>
+
+															<span class="label label-default"> Process </span> : Select the car which has the <strong>minimum average mileage</strong> under every manufacturer. This list provides the car, under each manufacturer, which is more error prone compared to the other cars under the same manufacturer</p>
+
+															<h2><u>Most and Least reliable car</u></h2>
+
+															<p><span class="label label-default">Aim</span> : To fetch the most and least reliable cars among all the cars present<br>
+
+																<span class="label label-default"> Process </span> :  Fetch the cars with minimum average mileage under every manufacturer. From this list select the cars which have the minimum (least reliable) and maximum (most reliable) average mileage</p>
+															</div>
+														</div>
+														<h3> Least reliable car <span class="label label-danger">F-53 MOTOR HOME CHASSIS</span> </h3>
+														<h3> Most reliable car <span class="label label-danger">CAR HAULER</span> </h3>
+														<h2> <u>Table below describes the cars that are more error prone under each make </u></h2>
+														<table class="table">
+															<tr><th>MAKE</th><th>MODEL</th><th>Avg Mileage</th></tr>
+															<tr><td>ACURA</td><td>NSX</td><td>47310</td></tr>
+															<tr><td>ALFA ROMEO</td><td>SPIDER</td><td>55726</td></tr>
+															<tr><td>AMERICAN MOTORS</td><td>CJ7</td><td>167852</td></tr>
+															<tr><td>AUDI</td><td>S5</td><td>25694</td></tr>
+															<tr><td>AUSTIN</td><td>AMERICA</td><td>85462</td></tr>
+															<tr><td>BENTLEY</td><td>CONTINENTAL GT</td><td>46292</td></tr>
+															<tr><td>BIG DOG</td><td>MASTIFF</td><td>19671</td></tr>
+															<tr><td>BMW</td><td>M COUPE</td><td>21106</td></tr>
+															<tr><td>BUICK</td><td>ENCLAVE</td><td>38295</td></tr>
+															<tr><td>CADILLAC</td><td>CIMARRON</td><td>13002</td></tr>
+															<tr><td>CARG</td><td>ROSE</td><td>84981</td></tr>
+															<tr><td>CHEVROLET</td><td>CRUZE</td><td>17224</td></tr>
+															<tr><td>CHRYSLER</td><td>200</td><td>16488</td></tr>
+														</table>
+														<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#carstable">More rows</button>
+														<div id="carstable" class="collapse">
+															<table class="table">
+																<tr><td>CV</td><td>4 DOOR SEDAN</td><td>33108</td></tr>
+																<tr><td>DAEWOO</td><td>NUBIRA</td><td>56285</td></tr>
+																<tr><td>DAIHATSU</td><td>ROCKY</td><td>107654</td></tr>
+																<tr><td>DODGE</td><td>RAM VAN 150</td><td>13221</td></tr>
+																<tr><td>EAGLE</td><td>VISION</td><td>139637</td></tr>
+																<tr><td>FERRARI</td><td>360</td><td>18601</td></tr>
+																<tr><td>FIAT</td><td>SPIDER</td><td>67100</td></tr>
+																<tr><td>FORD</td><td>F-53 MOTOR HOME CHASSIS</td><td>10557</td></tr>
+																<tr><td>FREIGHTLINER</td><td>FLD112</td><td>133090</td></tr>
+																<tr><td>GEO</td><td>TRACKER</td><td>94174</td></tr>
+																<tr><td>GMC</td><td>C/K 2500</td><td>10647</td></tr>
+																<tr><td>HONDA</td><td>CR-Z</td><td>17836</td></tr>
+																<tr><td>HUMMER</td><td>H3T</td><td>25613</td></tr>
+																<tr><td>HYUNDAI</td><td>VELOSTER</td><td>12785</td></tr>
+																<tr><td>INFINATY</td><td>G37</td><td>19456</td></tr>
+																<tr><td>INFINITI</td><td>M35H</td><td>13441</td></tr>
+																<tr><td>INTERNATIONAL</td><td>NAVISTAR</td><td>20656</td></tr>
+																<tr><td>ISUZU</td><td>I-280</td><td>29836</td></tr>
+																<tr><td>JAGUAR</td><td>XJ</td><td>20107</td></tr>
+																<tr><td>JEEP</td><td>WRANGLER UNLIMITED</td><td>28806</td></tr>
+																<tr><td>KIA</td><td>FORTE KOUP</td><td>19358</td></tr>
+																<tr><td>LAND ROVER</td><td>DEFENDER 90</td><td>31813</td></tr>
+																<tr><td>LEXUS</td><td>IS 250C</td><td>15776</td></tr>
+																<tr><td>LINCOLN</td><td>MKZ HYBRID</td><td>12349</td></tr>
+																<tr><td>LOTUS</td><td>ELISE</td><td>32001</td></tr>
+																<tr><td>MALAGUTI</td><td>SCOOTER</td><td>20025</td></tr>
+																<tr><td>MAZDA</td><td>MAZDA2</td><td>21056</td></tr>
+																<tr><td>MERCEDES-BENZ</td><td>GLK-CLASS</td><td>25460</td></tr>
+																<tr><td>MERCURY</td><td>MONTCLAIR</td><td>11942</td></tr>
+																<tr><td>MERKUR</td><td>XR4TI</td><td>115556</td></tr>
+																<tr><td>MINI</td><td>COOPER</td><td>50484</td></tr>
+																<tr><td>MITSUBISHI</td><td>OUTLANDER SPORT</td><td>16611</td></tr>
+																<tr><td>NI</td><td>4 DOOR SEDAN</td><td>171849</td></tr>
+																<tr><td>NISSAN</td><td>LEAF</td><td>11940</td></tr>
+																<tr><td>OLDSMOBILE</td><td>CUTLASS SALON</td><td>52184</td></tr>
+																<tr><td>PLYMOUTH</td><td>PROWLER</td><td>32778</td></tr>
+																<tr><td>PONTIAC</td><td>G3</td><td>20155</td></tr>
+																<tr><td>PORSCHE</td><td>CAYMAN</td><td>33647</td></tr>
+																<tr><td>RAM</td><td>3500</td><td>11690</td></tr>
+																<tr><td>RENAULT</td><td>R10</td><td>54837</td></tr>
+																<tr><td>REO</td><td>FLYING CLO</td><td>102237</td></tr>
+																<tr><td>ROAD BOSS</td><td>CAR HAULER</td><td>1111111</td></tr>
+																<tr><td>SAAB</td><td>9-3X</td><td>15599</td></tr>
+																<tr><td>SATURN</td><td>SKY</td><td>32688</td></tr>
+																<tr><td>SCION</td><td>XD</td><td>46940</td></tr>
+																<tr><td>SMART</td><td>FORTWO</td><td>26492</td></tr>
+																<tr><td>SUBARU</td><td>TRIBECA</td><td>37278</td></tr>
+																<tr><td>SUZUKI</td><td>KATANA 600</td><td>11391</td></tr>
+																<tr><td>TOYOTA</td><td>VENZA</td><td>26731</td></tr>
+																<tr><td>TOYOTTA</td><td>CAMERY</td><td>21000</td></tr>
+																<tr><td>TRIUMPH</td><td>TR6</td><td>32632</td></tr>
+																<tr><td>UD</td><td>UD1400</td><td>90285</td></tr>
+																<tr><td>UNKNOWN MAKE</td><td>UNKNOWN MODEL</td><td>147946</td></tr>
+																<tr><td>VOLKSWAGEN</td><td>VISTA</td><td>23603</td></tr>
+																<tr><td>VOLVO</td><td>XC60</td><td>21435</td></tr>
+																<tr><td>YAMAHA</td><td>VENTURE</td><td>10696</td></tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</body>
+											<!-- Load c3.css -->
+											<link href="c3.css" rel="stylesheet" type="text/css">
+
+											<!-- Load d3.js and c3.js -->
+											<script type="text/javascript" src="d3.min.js"></script>
+											<script type="text/javascript" src="c3.min.js"></script>
+											<link href="style.css" rel="stylesheet" type="text/css">
+											<script type="text/javascript">
+											$( window ).load(function() {
+												var chart = c3.generate({
+													bindto: '#chart',
+													data: {
+														columns: [
+
+														['2009', 506,879,1215,1081,1288,1538,1874,1889,4233,4207,3954,5317],
+														['2010', 6197,6293,8615,9494,10172,13416,13242,13521,16407,17194,54580,104476],
+														['2011', 99789,96278,111781,103753,100877,104029,114616,111998,100624,100388,95964,98706],
+														['2012', 96059,92828,105451,21766]
+														]
+													},
+													axis: {
+														x: {
+															label: 'Month - Year',
+															type: 'category',
+															categories: ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'Aug','Sep', 'Oct', 'Nov', 'Dec']
+														},
+														y: {
+															label: 'Number of Repairs',
+														},
+													},
+												});
+
+												var yearwisechart = c3.generate({
+													bindto: '#yearwisedefect',
+													data: {
+														columns: [
+														['CIVIC', 2,1,2,3,4,21,33,45,19,54,42,110,115,122,150,253,282,310,252,317,478,521,662,384,333,113,88],
+														],
+														type: 'bar'
+													},
+													bar: {
+														width: {
+															ratio: 0.5
+														}
+													},
+													axis: {
+														x: {
+															label: 'Car Model',
+															type:"category",
+															categories:['1981','1984','1988','1989','1990','1991','1992','1993','1994','1995','1996','1997','1998','1999','2000','2001','2002','2003','2004','2005','2006','2007','2008','2009','2010','2011','2012']
+														},
+														y: {
+															label: 'Number of Repairs'
+														} 
+
+													},
+												});
+
+											});
+
+</script>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+
+
+</html>
