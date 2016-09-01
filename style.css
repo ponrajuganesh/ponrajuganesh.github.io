@@ -1,21 +1,13 @@
-.chart > div {
-       width: 812px !important;
+#contentdiv {
+	width: 80%;
+	margin-top: 5%;
+	margin-left: 10%;
 }
 
-#maindiv {
-    width: 1000px;
-    padding: 25px;
-    margin: 25px;
+h1 {
+	font-family: 'Merriweather Sans', sans-serif;
 }
 
-p,dd,li,table {
-  font: 400 14px/1.5 'Montserrat', Times, serif;
-}
-
-.panel-heading {
-  font: 400 14px/1.5 'Montserrat', Times, serif;
-}
-
-dt, h2, h3 {
-  font: 100 16px/1.5 'Nunito', Times, serif;
+div, li {
+	font-family: 'Nunito', sans-serif;
 }
